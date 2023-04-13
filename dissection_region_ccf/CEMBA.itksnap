@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--ITK-SNAP (itksnap.org) Project File
+
+This file can be moved/copied along with the images that it references
+as long as the relative location of the images to the project file is 
+the same. Do not modify the SaveLocation entry, or this will not work.
+-->
+<!DOCTYPE registry [
+<!ELEMENT registry (entry*,folder*)>
+<!ELEMENT folder (entry*,folder*)>
+<!ELEMENT entry EMPTY>
+<!ATTLIST folder key CDATA #REQUIRED>
+<!ATTLIST entry key CDATA #REQUIRED>
+<!ATTLIST entry value CDATA #REQUIRED>
+]>
+<registry>
+  <entry key="SaveLocation" value="/Users/hq/Google Drive (hanliu@salk.edu)/work/Allen3D/AllenCCFv3/cemba_dissection" />
+  <entry key="Version" value="20190612" />
+  <folder key="Annotations" >
+    <entry key="Format" value="ITK-SNAP Annotation File" />
+    <entry key="FormatDate" value="20150624" />
+  </folder>
+  <folder key="Layers" >
+    <folder key="Layer[000]" >
+      <entry key="AbsolutePath" value="/Users/hq/Google Drive (hanliu@salk.edu)/work/Allen3D/AllenCCFv3/cemba_dissection/average_template_25.nrrd" />
+      <entry key="Role" value="MainRole" />
+      <entry key="Tags" value="" />
+      <folder key="IOHints" >
+        <entry key="Format" value="NRRD" />
+      </folder>
+      <folder key="LayerMetaData" >
+        <entry key="Alpha" value="255" />
+        <entry key="CustomNickName" value="" />
+        <entry key="Sticky" value="0" />
+        <entry key="Tags" value="" />
+        <folder key="DisplayMapping" >
+          <folder key="ColorMap" >
+            <entry key="Preset" value="Grayscale" />
+          </folder>
+          <folder key="Curve" >
+            <entry key="NumberOfControlPoints" value="3" />
+            <folder key="ControlPoint[0]" >
+              <entry key="tValue" value="0" />
+              <entry key="xValue" value="0" />
+            </folder>
+            <folder key="ControlPoint[1]" >
+              <entry key="tValue" value="0.5" />
+              <entry key="xValue" value="0.5" />
+            </folder>
+            <folder key="ControlPoint[2]" >
+              <entry key="tValue" value="1" />
+              <entry key="xValue" value="1" />
+            </folder>
+          </folder>
+        </folder>
+      </folder>
+      <folder key="ProjectMetaData" >
+        <entry key="GaussianBlurScale" value="1" />
+        <entry key="RemappingExponent" value="3" />
+        <entry key="RemappingSteepness" value="0.04" />
+        <folder key="Files" >
+          <folder key="Grey" >
+            <entry key="Dimensions" value="528 320 456" />
+            <entry key="Orientation" value="ASR" />
+          </folder>
+        </folder>
+        <folder key="IOHistory" >
+          <folder key="LabelDescriptions" >
+            <entry key="ArraySize" value="1" />
+            <entry key="Element[0]" value="/Users/hq/Google Drive (hanliu@salk.edu)/work/Allen3D/AllenCCFv3/cemba_dissection/CEMBA_region_anno_itksnap.txt" />
+          </folder>
+          <folder key="LabelImage" >
+            <entry key="ArraySize" value="1" />
+            <entry key="Element[0]" value="/Users/hq/Google Drive (hanliu@salk.edu)/work/Allen3D/AllenCCFv3/cemba_dissection/CEMBA_region.nii.gz" />
+          </folder>
+        </folder>
+        <folder key="IRIS" >
+          <entry key="SliceViewLayerLayout" value="Stacked" />
+          <folder key="BoundingBox" >
+            <entry key="InterpolationMethod" value="Nearest" />
+            <entry key="ResampleDimensions" value="528 320 456" />
+            <entry key="SeedWithCurrentSegmentation" value="0" />
+            <folder key="ROIBox[0]" >
+              <entry key="Index" value="0" />
+              <entry key="Size" value="528" />
+            </folder>
+            <folder key="ROIBox[1]" >
+              <entry key="Index" value="0" />
+              <entry key="Size" value="320" />
+            </folder>
+            <folder key="ROIBox[2]" >
+              <entry key="Index" value="0" />
+              <entry key="Size" value="456" />
+            </folder>
+          </folder>
+          <folder key="DisplayMapping" >
+            <folder key="ColorMap" >
+              <entry key="Preset" value="Grayscale" />
+            </folder>
+            <folder key="Curve" >
+              <entry key="NumberOfControlPoints" value="3" />
+              <folder key="ControlPoint[0]" >
+                <entry key="tValue" value="0" />
+                <entry key="xValue" value="0" />
+              </folder>
+              <folder key="ControlPoint[1]" >
+                <entry key="tValue" value="0.5" />
+                <entry key="xValue" value="0.5" />
+              </folder>
+              <folder key="ControlPoint[2]" >
+                <entry key="tValue" value="1" />
+                <entry key="xValue" value="1" />
+              </folder>
+            </folder>
+          </folder>
+          <folder key="LabelState" >
+            <entry key="CoverageMode" value="OverAll" />
+            <entry key="DrawingLabel" value="1" />
+            <entry key="OverwriteLabel" value="0" />
+            <entry key="PolygonInvert" value="0" />
+            <entry key="SegmentationAlpha" value="0.5" />
+          </folder>
+          <folder key="LabelTable" >
+            <entry key="NumberOfElements" value="119" />
+            <folder key="Element[0]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="175 204 236" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="1" />
+              <entry key="Label" value="1A" />
+            </folder>
+            <folder key="Element[100]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="82 162 125" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="101" />
+              <entry key="Label" value="13C" />
+            </folder>
+            <folder key="Element[101]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="148 166 107" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="102" />
+              <entry key="Label" value="13D" />
+            </folder>
+            <folder key="Element[102]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="95 152 226" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="103" />
+              <entry key="Label" value="13E" />
+            </folder>
+            <folder key="Element[103]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="76 145 170" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="104" />
+              <entry key="Label" value="13F" />
+            </folder>
+            <folder key="Element[104]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="196 225 74" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="105" />
+              <entry key="Label" value="14A" />
+            </folder>
+            <folder key="Element[105]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="221 135 101" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="106" />
+              <entry key="Label" value="14B" />
+            </folder>
+            <folder key="Element[106]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="120 203 230" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="107" />
+              <entry key="Label" value="14C" />
+            </folder>
+            <folder key="Element[107]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="53 98 131" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="108" />
+              <entry key="Label" value="14D" />
+            </folder>
+            <folder key="Element[108]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="133 160 57" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="109" />
+              <entry key="Label" value="15A" />
+            </folder>
+            <folder key="Element[109]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="223 134 47" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="110" />
+              <entry key="Label" value="15B" />
+            </folder>
+            <folder key="Element[10]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="23 108 219" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="11" />
+              <entry key="Label" value="3C" />
+            </folder>
+            <folder key="Element[110]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="104 70 204" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="111" />
+              <entry key="Label" value="15C" />
+            </folder>
+            <folder key="Element[111]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="151 66 38" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="112" />
+              <entry key="Label" value="16A" />
+            </folder>
+            <folder key="Element[112]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="222 179 76" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="113" />
+              <entry key="Label" value="16B" />
+            </folder>
+            <folder key="Element[113]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="102 69 141" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="114" />
+              <entry key="Label" value="16C" />
+            </folder>
+            <folder key="Element[114]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="154 115 41" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="115" />
+              <entry key="Label" value="17A" />
+            </folder>
+            <folder key="Element[115]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="180 145 214" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="116" />
+              <entry key="Label" value="17B" />
+            </folder>
+            <folder key="Element[116]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="220 73 40" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="117" />
+              <entry key="Label" value="18A" />
+            </folder>
+            <folder key="Element[117]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="189 82 211" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="118" />
+              <entry key="Label" value="18B" />
+            </folder>
+            <folder key="Element[118]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="100 50 43" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="119" />
+              <entry key="Label" value="9Kb" />
+            </folder>
+            <folder key="Element[11]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="166 214 52" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="12" />
+              <entry key="Label" value="3D" />
+            </folder>
+            <folder key="Element[12]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="242 191 74" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="13" />
+              <entry key="Label" value="3E" />
+            </folder>
+            <folder key="Element[13]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="221 210 244" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="14" />
+              <entry key="Label" value="3F" />
+            </folder>
+            <folder key="Element[14]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="140 86 75" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="15" />
+              <entry key="Label" value="4A" />
+            </folder>
+            <folder key="Element[15]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="47 83 142" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="16" />
+              <entry key="Label" value="4B" />
+            </folder>
+            <folder key="Element[16]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="107 255 184" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="17" />
+              <entry key="Label" value="4C" />
+            </folder>
+            <folder key="Element[17]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="200 122 253" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="18" />
+              <entry key="Label" value="4D" />
+            </folder>
+            <folder key="Element[18]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="255 210 252" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="19" />
+              <entry key="Label" value="4E" />
+            </folder>
+            <folder key="Element[19]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="239 178 44" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="20" />
+              <entry key="Label" value="4F" />
+            </folder>
+            <folder key="Element[1]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="196 156 148" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="2" />
+              <entry key="Label" value="1B" />
+            </folder>
+            <folder key="Element[20]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="163 118 244" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="21" />
+              <entry key="Label" value="4G" />
+            </folder>
+            <folder key="Element[21]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="148 103 189" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="22" />
+              <entry key="Label" value="4H" />
+            </folder>
+            <folder key="Element[22]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="94 64 53" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="23" />
+              <entry key="Label" value="5A" />
+            </folder>
+            <folder key="Element[23]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="44 234 163" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="24" />
+              <entry key="Label" value="5B" />
+            </folder>
+            <folder key="Element[24]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="0 255 103" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="25" />
+              <entry key="Label" value="5C" />
+            </folder>
+            <folder key="Element[25]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="4 61 122" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="26" />
+              <entry key="Label" value="5D" />
+            </folder>
+            <folder key="Element[26]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="123 66 205" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="27" />
+              <entry key="Label" value="5E" />
+            </folder>
+            <folder key="Element[27]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="227 119 194" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="28" />
+              <entry key="Label" value="5F" />
+            </folder>
+            <folder key="Element[28]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="198 127 8" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="29" />
+              <entry key="Label" value="5G" />
+            </folder>
+            <folder key="Element[29]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="194 74 244" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="30" />
+              <entry key="Label" value="5H" />
+            </folder>
+            <folder key="Element[2]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="250 223 99" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="3" />
+              <entry key="Label" value="1C" />
+            </folder>
+            <folder key="Element[30]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="178 25 107" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="31" />
+              <entry key="Label" value="5J" />
+            </folder>
+            <folder key="Element[31]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="35 22 17" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="32" />
+              <entry key="Label" value="6A" />
+            </folder>
+            <folder key="Element[32]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="2 199 87" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="33" />
+              <entry key="Label" value="6B" />
+            </folder>
+            <folder key="Element[33]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="14 183 51" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="34" />
+              <entry key="Label" value="6C" />
+            </folder>
+            <folder key="Element[34]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="209 91 3" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="35" />
+              <entry key="Label" value="6D" />
+            </folder>
+            <folder key="Element[35]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="216 146 221" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="36" />
+              <entry key="Label" value="6E" />
+            </folder>
+            <folder key="Element[36]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="227 118 173" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="37" />
+              <entry key="Label" value="6F" />
+            </folder>
+            <folder key="Element[37]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="226 57 165" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="38" />
+              <entry key="Label" value="6G" />
+            </folder>
+            <folder key="Element[38]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="214 135 144" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="39" />
+              <entry key="Label" value="6H" />
+            </folder>
+            <folder key="Element[39]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="186 127 214" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="40" />
+              <entry key="Label" value="7A" />
+            </folder>
+            <folder key="Element[3]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="242 206 128" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="4" />
+              <entry key="Label" value="2A" />
+            </folder>
+            <folder key="Element[40]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="44 160 44" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="41" />
+              <entry key="Label" value="7B" />
+            </folder>
+            <folder key="Element[41]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="68 163 115" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="42" />
+              <entry key="Label" value="7C" />
+            </folder>
+            <folder key="Element[42]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="151 44 26" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="43" />
+              <entry key="Label" value="7D" />
+            </folder>
+            <folder key="Element[43]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="228 129 99" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="44" />
+              <entry key="Label" value="7E" />
+            </folder>
+            <folder key="Element[44]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="168 55 149" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="45" />
+              <entry key="Label" value="7F" />
+            </folder>
+            <folder key="Element[45]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="159 64 33" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="46" />
+              <entry key="Label" value="7G" />
+            </folder>
+            <folder key="Element[46]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="80 142 218" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="47" />
+              <entry key="Label" value="7H" />
+            </folder>
+            <folder key="Element[47]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="139 56 65" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="48" />
+              <entry key="Label" value="7J" />
+            </folder>
+            <folder key="Element[48]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="141 56 150" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="49" />
+              <entry key="Label" value="8A" />
+            </folder>
+            <folder key="Element[49]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="42 96 65" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="50" />
+              <entry key="Label" value="8B" />
+            </folder>
+            <folder key="Element[4]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="142 227 244" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="5" />
+              <entry key="Label" value="2B" />
+            </folder>
+            <folder key="Element[50]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="62 114 55" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="51" />
+              <entry key="Label" value="8C" />
+            </folder>
+            <folder key="Element[51]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="133 74 39" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="52" />
+              <entry key="Label" value="8D" />
+            </folder>
+            <folder key="Element[52]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="252 218 164" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="53" />
+              <entry key="Label" value="8E" />
+            </folder>
+            <folder key="Element[53]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="127 77 45" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="54" />
+              <entry key="Label" value="8F" />
+            </folder>
+            <folder key="Element[54]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="209 156 114" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="55" />
+              <entry key="Label" value="8G" />
+            </folder>
+            <folder key="Element[55]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="169 138 224" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="56" />
+              <entry key="Label" value="8H" />
+            </folder>
+            <folder key="Element[56]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="255 170 170" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="57" />
+              <entry key="Label" value="8J" />
+            </folder>
+            <folder key="Element[57]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="219 63 74" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="58" />
+              <entry key="Label" value="8K" />
+            </folder>
+            <folder key="Element[58]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="79 216 71" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="59" />
+              <entry key="Label" value="8L" />
+            </folder>
+            <folder key="Element[59]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="217 71 199" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="60" />
+              <entry key="Label" value="9A" />
+            </folder>
+            <folder key="Element[5]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="57 157 229" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="6" />
+              <entry key="Label" value="2C" />
+            </folder>
+            <folder key="Element[60]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="79 110 234" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="61" />
+              <entry key="Label" value="9B" />
+            </folder>
+            <folder key="Element[61]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="167 222 130" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="62" />
+              <entry key="Label" value="9C" />
+            </folder>
+            <folder key="Element[62]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="222 72 133" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="63" />
+              <entry key="Label" value="9D" />
+            </folder>
+            <folder key="Element[63]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="113 63 46" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="64" />
+              <entry key="Label" value="9E" />
+            </folder>
+            <folder key="Element[64]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="102 109 225" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="65" />
+              <entry key="Label" value="9F" />
+            </folder>
+            <folder key="Element[65]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="114 69 217" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="66" />
+              <entry key="Label" value="9G" />
+            </folder>
+            <folder key="Element[66]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="220 131 30" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="67" />
+              <entry key="Label" value="9H" />
+            </folder>
+            <folder key="Element[67]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="239 72 111" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="68" />
+              <entry key="Label" value="9J" />
+            </folder>
+            <folder key="Element[68]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="215 144 49" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="69" />
+              <entry key="Label" value="9Ka" />
+            </folder>
+            <folder key="Element[69]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="209 64 122" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="70" />
+              <entry key="Label" value="9L" />
+            </folder>
+            <folder key="Element[6]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="244 226 135" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="7" />
+              <entry key="Label" value="2D" />
+            </folder>
+            <folder key="Element[70]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="130 74 195" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="71" />
+              <entry key="Label" value="10A" />
+            </folder>
+            <folder key="Element[71]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="63 202 225" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="72" />
+              <entry key="Label" value="10B" />
+            </folder>
+            <folder key="Element[72]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="225 147 205" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="73" />
+              <entry key="Label" value="10C" />
+            </folder>
+            <folder key="Element[73]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="142 51 142" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="74" />
+              <entry key="Label" value="10D" />
+            </folder>
+            <folder key="Element[74]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="255 99 71" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="75" />
+              <entry key="Label" value="10E" />
+            </folder>
+            <folder key="Element[75]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="214 39 40" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="76" />
+              <entry key="Label" value="10F" />
+            </folder>
+            <folder key="Element[76]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="223 76 39" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="77" />
+              <entry key="Label" value="10G" />
+            </folder>
+            <folder key="Element[77]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="116 228 75" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="78" />
+              <entry key="Label" value="10H" />
+            </folder>
+            <folder key="Element[78]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="49 103 81" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="79" />
+              <entry key="Label" value="10J" />
+            </folder>
+            <folder key="Element[79]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="138 62 220" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="80" />
+              <entry key="Label" value="11A" />
+            </folder>
+            <folder key="Element[7]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="255 127 14" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="8" />
+              <entry key="Label" value="2E" />
+            </folder>
+            <folder key="Element[80]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="101 146 226" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="81" />
+              <entry key="Label" value="11B" />
+            </folder>
+            <folder key="Element[81]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="160 59 115" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="82" />
+              <entry key="Label" value="11C" />
+            </folder>
+            <folder key="Element[82]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="210 78 205" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="83" />
+              <entry key="Label" value="11D" />
+            </folder>
+            <folder key="Element[83]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="60 21 24" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="84" />
+              <entry key="Label" value="11E" />
+            </folder>
+            <folder key="Element[84]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="128 0 0" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="85" />
+              <entry key="Label" value="11F" />
+            </folder>
+            <folder key="Element[85]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="50 110 43" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="86" />
+              <entry key="Label" value="11G" />
+            </folder>
+            <folder key="Element[86]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="84 173 67" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="87" />
+              <entry key="Label" value="11H" />
+            </folder>
+            <folder key="Element[87]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="136 221 191" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="88" />
+              <entry key="Label" value="11J" />
+            </folder>
+            <folder key="Element[88]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="91 65 166" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="89" />
+              <entry key="Label" value="11K" />
+            </folder>
+            <folder key="Element[89]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="118 83 146" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="90" />
+              <entry key="Label" value="12A" />
+            </folder>
+            <folder key="Element[8]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="155 114 96" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="9" />
+              <entry key="Label" value="3A" />
+            </folder>
+            <folder key="Element[90]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="65 93 164" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="91" />
+              <entry key="Label" value="12B" />
+            </folder>
+            <folder key="Element[91]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="87 84 156" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="92" />
+              <entry key="Label" value="12C" />
+            </folder>
+            <folder key="Element[92]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="217 145 193" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="93" />
+              <entry key="Label" value="12D" />
+            </folder>
+            <folder key="Element[93]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="129 63 104" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="94" />
+              <entry key="Label" value="12E" />
+            </folder>
+            <folder key="Element[94]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="106 226 150" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="95" />
+              <entry key="Label" value="12F" />
+            </folder>
+            <folder key="Element[95]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="206 227 154" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="96" />
+              <entry key="Label" value="12G" />
+            </folder>
+            <folder key="Element[96]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="82 96 43" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="97" />
+              <entry key="Label" value="12H" />
+            </folder>
+            <folder key="Element[97]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="48 97 167" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="98" />
+              <entry key="Label" value="12J" />
+            </folder>
+            <folder key="Element[98]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="57 84 182" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="99" />
+              <entry key="Label" value="13A" />
+            </folder>
+            <folder key="Element[99]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="211 67 145" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="100" />
+              <entry key="Label" value="13B" />
+            </folder>
+            <folder key="Element[9]" >
+              <entry key="Alpha" value="255" />
+              <entry key="Color" value="111 202 209" />
+              <entry key="Flags" value="1 1" />
+              <entry key="Index" value="10" />
+              <entry key="Label" value="3B" />
+            </folder>
+          </folder>
+          <folder key="MeshOptions" >
+            <entry key="DecimateFeatureAngle" value="45" />
+            <entry key="DecimateMaximumError" value="0.002" />
+            <entry key="DecimatePreserveTopology" value="1" />
+            <entry key="DecimateTargetReduction" value="0.95" />
+            <entry key="GaussianError" value="0.03" />
+            <entry key="GaussianStandardDeviation" value="0.8" />
+            <entry key="MeshSmoothingBoundarySmoothing" value="0" />
+            <entry key="MeshSmoothingConvergence" value="0" />
+            <entry key="MeshSmoothingFeatureAngle" value="45" />
+            <entry key="MeshSmoothingFeatureEdgeSmoothing" value="0" />
+            <entry key="MeshSmoothingIterations" value="20" />
+            <entry key="MeshSmoothingRelaxationFactor" value="0.01" />
+            <entry key="UseDecimation" value="0" />
+            <entry key="UseGaussianSmoothing" value="1" />
+            <entry key="UseMeshSmoothing" value="0" />
+          </folder>
+        </folder>
+        <folder key="SNAP" >
+          <folder key="SnakeParameters" >
+            <entry key="AdvectionSpeedExponent" value="0" />
+            <entry key="AdvectionWeight" value="0" />
+            <entry key="AutomaticTimeStep" value="1" />
+            <entry key="Clamp" value="1" />
+            <entry key="CurvatureSpeedExponent" value="-1" />
+            <entry key="CurvatureWeight" value="0.2" />
+            <entry key="Ground" value="5" />
+            <entry key="LaplacianSpeedExponent" value="0" />
+            <entry key="LaplacianWeight" value="0" />
+            <entry key="PropagationSpeedExponent" value="1" />
+            <entry key="PropagationWeight" value="1" />
+            <entry key="SnakeType" value="RegionCompetition" />
+            <entry key="SolverAlgorithm" value="ParallelSparseField" />
+            <entry key="TimeStepFactor" value="1" />
+          </folder>
+        </folder>
+      </folder>
+    </folder>
+    <folder key="Layer[001]" >
+      <entry key="AbsolutePath" value="/Users/hq/Google Drive (hanliu@salk.edu)/work/Allen3D/AllenCCFv3/cemba_dissection/CEMBA_region.nii.gz" />
+      <entry key="Role" value="SegmentationRole" />
+      <entry key="Tags" value="" />
+      <folder key="IOHints" >
+        <entry key="Format" value="NiFTI" />
+      </folder>
+      <folder key="LayerMetaData" >
+        <entry key="Alpha" value="0" />
+        <entry key="CustomNickName" value="" />
+        <entry key="Sticky" value="1" />
+        <entry key="Tags" value="" />
+      </folder>
+    </folder>
+  </folder>
+</registry>
