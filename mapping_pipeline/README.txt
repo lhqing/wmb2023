@@ -35,10 +35,9 @@ snakemake -j n_cpu --snakefile ./Snakefile
 
 ## Mapping steps for a single cell
 ### snmC
-![snmc](https://raw.githubusercontent.com/lhqing/wmb2023/main/mapping_pipeline/snmC_example/snmC_steps.svg)
+![snmc](https://github.com/lhqing/wmb2023/blob/main/mapping_pipeline/snmC_example/snmC_steps.svg?raw=true)
 ### snm3C
-![snm3c](https://raw.githubusercontent.com/lhqing/wmb2023/main/mapping_pipeline/snm3C_example/snm3C_steps.svg)
-
+![snm3c](https://github.com/lhqing/wmb2023/blob/main/mapping_pipeline/snm3C_example/snm3C_steps.svg?raw=true)
 
 ## Mapping example files:
 ```
