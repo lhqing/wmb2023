@@ -21,7 +21,7 @@ All genome sequence and related files downloaded from:
 https://hgdownload.cse.ucsc.edu/goldenpath/mm10/bigZips/
 
 ## Run mapping
-
+The two FASTQ files for a single cell (downsampled) can be used to test the pipeline. 
 ```
 # run snmC mapping
 cd snmC_example/

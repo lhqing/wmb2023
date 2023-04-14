@@ -1,0 +1,205 @@
+
+groups = ['GROUP_NAME']
+
+
+rule final:
+    input:
+        # target the final rule success flag of each group
+        expand('/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/step_6.success', group_name=groups)
+    output:
+        "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/Snakemake.success"
+    shell:
+        # create a final success flag
+        "touch {output}"
+
+
+rule step_1b:
+    input:
+        "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/Snakefile",
+    params:
+        input_nb="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/template/01b.select_rna_cef.ipynb"
+    output:
+        "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/step_1b.success"
+    log:
+        output_nb="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/01b.select_rna_cef.ipynb",
+        log="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/01b.select_rna_cef.ipynb.log"
+    threads:
+        1
+    resources:
+        mem_gb=1
+    shell:
+        "glider-preset papermill "
+        "--input_path {params.input_nb} "
+        "--output_path {log.output_nb} "
+        "--config_path /mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{wildcards.group_name}/log/step_1b.config.yaml "
+        "--cwd /mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{wildcards.group_name} "
+        "--log_path {log.log} "
+        "--success_flag {output} "
+
+
+rule step_1a:
+    input:
+        "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/Snakefile",
+    params:
+        input_nb="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/template/01a.select_mc_cef.ipynb"
+    output:
+        "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/step_1a.success"
+    log:
+        output_nb="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/01a.select_mc_cef.ipynb",
+        log="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/01a.select_mc_cef.ipynb.log"
+    threads:
+        1
+    resources:
+        mem_gb=1
+    shell:
+        "glider-preset papermill "
+        "--input_path {params.input_nb} "
+        "--output_path {log.output_nb} "
+        "--config_path /mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{wildcards.group_name}/log/step_1a.config.yaml "
+        "--cwd /mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{wildcards.group_name} "
+        "--log_path {log.log} "
+        "--success_flag {output} "
+
+
+rule step_2a:
+    input:
+        "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/step_1b.success", "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/step_1a.success",
+    params:
+        input_nb="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/template/02a.prepare_mc.ipynb"
+    output:
+        "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/step_2a.success"
+    log:
+        output_nb="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/02a.prepare_mc.ipynb",
+        log="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/02a.prepare_mc.ipynb.log"
+    threads:
+        1
+    resources:
+        mem_gb=1
+    shell:
+        "glider-preset papermill "
+        "--input_path {params.input_nb} "
+        "--output_path {log.output_nb} "
+        "--config_path /mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{wildcards.group_name}/log/step_2a.config.yaml "
+        "--cwd /mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{wildcards.group_name} "
+        "--log_path {log.log} "
+        "--success_flag {output} "
+
+
+rule step_2b:
+    input:
+        "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/step_1b.success", "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/step_1a.success",
+    params:
+        input_nb="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/template/02b.prepare_rna.ipynb"
+    output:
+        "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/step_2b.success"
+    log:
+        output_nb="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/02b.prepare_rna.ipynb",
+        log="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/02b.prepare_rna.ipynb.log"
+    threads:
+        1
+    resources:
+        mem_gb=1
+    shell:
+        "glider-preset papermill "
+        "--input_path {params.input_nb} "
+        "--output_path {log.output_nb} "
+        "--config_path /mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{wildcards.group_name}/log/step_2b.config.yaml "
+        "--cwd /mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{wildcards.group_name} "
+        "--log_path {log.log} "
+        "--success_flag {output} "
+
+
+rule step_3:
+    input:
+        "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/step_2a.success", "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/step_2b.success",
+    params:
+        input_nb="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/template/03.merge_and_pca.ipynb"
+    output:
+        "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/step_3.success"
+    log:
+        output_nb="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/03.merge_and_pca.ipynb",
+        log="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/03.merge_and_pca.ipynb.log"
+    threads:
+        1
+    resources:
+        mem_gb=1
+    shell:
+        "glider-preset papermill "
+        "--input_path {params.input_nb} "
+        "--output_path {log.output_nb} "
+        "--config_path /mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{wildcards.group_name}/log/step_3.config.yaml "
+        "--cwd /mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{wildcards.group_name} "
+        "--log_path {log.log} "
+        "--success_flag {output} "
+
+
+rule step_4:
+    input:
+        "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/step_3.success",
+    params:
+        input_nb="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/template/04.integration.ipynb"
+    output:
+        "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/step_4.success"
+    log:
+        output_nb="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/04.integration.ipynb",
+        log="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/04.integration.ipynb.log"
+    threads:
+        3
+    resources:
+        mem_gb=1
+    shell:
+        "glider-preset papermill "
+        "--input_path {params.input_nb} "
+        "--output_path {log.output_nb} "
+        "--config_path /mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{wildcards.group_name}/log/step_4.config.yaml "
+        "--cwd /mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{wildcards.group_name} "
+        "--log_path {log.log} "
+        "--success_flag {output} "
+
+
+rule step_5:
+    input:
+        "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/step_4.success",
+    params:
+        input_nb="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/template/05.embedding.ipynb"
+    output:
+        "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/step_5.success"
+    log:
+        output_nb="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/05.embedding.ipynb",
+        log="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/05.embedding.ipynb.log"
+    threads:
+        5
+    resources:
+        mem_gb=1
+    shell:
+        "glider-preset papermill "
+        "--input_path {params.input_nb} "
+        "--output_path {log.output_nb} "
+        "--config_path /mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{wildcards.group_name}/log/step_5.config.yaml "
+        "--cwd /mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{wildcards.group_name} "
+        "--log_path {log.log} "
+        "--success_flag {output} "
+
+
+rule step_6:
+    input:
+        "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/step_5.success",
+    params:
+        input_nb="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/template/06.confusion_matrix.ipynb"
+    output:
+        "/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/step_6.success"
+    log:
+        output_nb="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/06.confusion_matrix.ipynb",
+        log="/mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{group_name}/log/06.confusion_matrix.ipynb.log"
+    threads:
+        1
+    resources:
+        mem_gb=1
+    shell:
+        "glider-preset papermill "
+        "--input_path {params.input_nb} "
+        "--output_path {log.output_nb} "
+        "--config_path /mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{wildcards.group_name}/log/step_6.config.yaml "
+        "--cwd /mnt/filestore/221015-cemba-mc-aibs-tenx-integration/Round1/{wildcards.group_name} "
+        "--log_path {log.log} "
+        "--success_flag {output} "
