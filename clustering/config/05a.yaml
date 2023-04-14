@@ -1,0 +1,11 @@
+# HVF mC Fraction AnnData Files
+adata_path: 'mCH.CEF.h5ad'
+pre_cluster_name: 'leiden'
+
+# if auto, will use Kolmogorov-Smirnov test to test the adjacent PCs and cut when P > p_cutoff
+n_components: 'auto'
+# ks test p value cutoff, only apply when n_components == 'auto'
+p_cutoff: 0.1
+
+# downsample large clusters
+max_cell_prop: 0.1

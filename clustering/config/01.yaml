@@ -1,0 +1,7 @@
+dataset: mC
+min_cov: 500
+max_cov: 3000
+exclude_chromosome: 
+ - chrM
+ - chrX
+ - chrY

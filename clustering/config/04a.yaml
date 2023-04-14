@@ -1,0 +1,18 @@
+adata_path: 'mCH.HVF.h5ad'
+
+# Cluster Enriched Features analysis
+top_n: 200
+alpha: 0.05
+stat_plot: True
+
+# you may provide a pre calculated cluster version. 
+# If None, will perform basic clustering using parameters below.
+cluster_col: null  
+
+# These parameters only used when cluster_col is None
+knn: 25
+resolution: 1
+cluster_plot: False
+
+# downsample large clusters when calculating CEF
+downsample: 1000

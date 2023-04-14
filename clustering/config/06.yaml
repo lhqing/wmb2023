@@ -1,0 +1,6 @@
+dataset: 'mC'
+
+# HVF mC Fraction AnnData Files
+ch_adata_path: 'mch_adata.with_coords.h5ad'
+cg_adata_path: 'mcg_adata.with_coords.h5ad'
+pre_cluster_name: 'leiden'

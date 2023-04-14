@@ -1,0 +1,30 @@
+# clustering name
+clustering_name: L1
+
+# input data
+adata_path: adata.with_coords.h5ad
+coord_base: tsne
+
+# ConsensusClustering
+# Important factores
+n_neighbors: 25
+leiden_resolution: 0.25
+# this parameter is the final target that limit the total number of clusters
+# Higher accuracy means more conservative clustering results and less number of clusters
+target_accuracy: 0.95
+min_cluster_size: 50
+
+# Other ConsensusClustering parameters
+metric: euclidean
+consensus_rate: 0.5
+leiden_repeats: 200
+random_state: 0
+train_frac: 0.5
+train_max_n: 500
+max_iter: 50
+n_jobs: 40
+
+# Dendrogram via Multiscale Bootstrap Resampling
+nboot: 10000
+method_dist: correlation
+method_hclust: average

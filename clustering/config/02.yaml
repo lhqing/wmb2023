@@ -1,0 +1,20 @@
+dataset: 'mC'
+
+# If True, will load all data into memory.
+# Computation will be much faster, but also very memory intensive, only use this for small number of cells
+load: True
+var_dim: 'chrom100k'
+
+# Feature list after basic filter
+feature_path: 'FeatureList.BasicFilter.txt'
+
+# HVF method:
+# SVR: regression based
+# Bins: normalize dispersion per bin
+hvf_method: 'SVR'
+mch_pattern: 'CHN'
+mcg_pattern: 'CGN'
+n_top_feature: 15000
+
+# Downsample cells
+downsample: 30000
