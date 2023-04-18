@@ -19,3 +19,5 @@ This directory contains Jupyter notebooks for performing cross-modality integrat
 between mC and RNA (using gene as features), 
 mC and ATAC (using chrom5k as features) dataset.
 
+## 5. [Merfish and RNA/mC integration](merfish)
+This directory contains Jupyter notebooks for performing integration between MERFISH and RNA , MERFISH and mC (using genes as features) dataset.
